@@ -1,87 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/mcdonalds.css">
-    <style>
-     
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/tesla.css">
+  
+  
+  <style>
+    .models {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    .modelsimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .modelstext {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 32px;
+      font-weight: bold;
+      z-index: 1;
+    }
+    .modelsbtn {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      display: flex;
+      gap: 10px;
+      border: 0;
+    }
+    .modelsbtn1 {
+      /* display: inline; */
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      border: 0;
+      border-radius: 3px;
+      background-color: #383838;
+      /* padding: 5px; */
+      width: 200px;
+      height: 30px;
+      z-index: 1;
+      font-size: 12px;
+    }
+    .modelsbtn2 {
+      /* display: inline; */
+      transform: translate(-50%, -50%);
+      text-align: center;
       
-    </style>
+      background-color: #dfdfdf;
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+      width: 200px;
+      height: 30px;
+      z-index: 1;
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body>
+
+
   <!-- 네비게이션바 -->
-    <header>
-        <button class="hamburger">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-        <nav>
-          <div class="logo">
-            <img src="./images/logo.png" alt="">
-          </div>
-          <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">What's New</a></li>
-            <li><a href="#">Story</a></li>
-          </ul>
-          <div class="navdiv">
-            <button class="btn1">
-              <b>임차문의</b>
-            </button>
-            <button class="btn2">
-              <b>RECRUIT</b>
-            </button>
-            <button class="btn3">
-              <b>ENG</b>
-            </button>
-            <button class="btn4">
-              <img src="./images/ico_search.png" alt="">
-            </button>
-          </div>
-        </nav>
-      </header>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const nav = document.querySelector('nav');
+  <header>
+    <nav>
+      <a href="#">
+        <img src="./images/TESLA LOGO-03.png" class="logo" >
+      </a>
+      <button class="hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <ul>
+        <li><a href="#">차량</a></li>
+        <li><a href="#">충전</a></li>
+        <li><a href="#">살펴보기</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+  </nav>
+  </header>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
 
-        hamburger.addEventListener('click', () => {
-        nav.classList.toggle('is-active');
-        });
-    </script>
+    hamburger.addEventListener('click', () => {
+    nav.classList.toggle('is-active');
+    });
+</script>
+  
+<!-- 메인비디오 -->
+ 
+  <div class="main-video">
+    <video src="./media/teslavideo.webm" autoplay loop>
+      <p class="maintext2">지금 바로 시승 신청해 보세요</p>
+    </video>
+    <p class="maintext1">Tesla 경험하기</p>
+    <p class="maintext2">지금 바로 시승 신청해 보세요</p>
+    <a href="#"><button class="mainbtn">시승 신청하기</button></a>
+  </div>
 
-
-
-<!-- 메인 -->
-
-  <hr id="navline">
-    <div class="container">
-      <div id="videobar">
-        <video src="./images/0404_McD_BB_BigMac_30_1920x540.mp4" alt=""></video>
-      </div>
-      <h1>McDonald's LIVE</h1>
-      <div> 
-        <div>
-          <img src="./images/11.jpg" alt="">
-        </div> 
-        <div></div> 
-      </div>
-      <div> <div></div> <div></div> 
-      </div>
-      <div> <div></div> <div></div> 
-      </div>
-      <div> <div></div> <div></div> 
-      </div>
-      <div> <div></div> <div></div> 
-      </div>
-      <div> <div></div> <div></div> 
-      </div>
+  <!-- 모델3 -->
+  <div class="model3">
+    <img src="./images/model3.jpg" class="model3img">
+    <p class="model3text">Model 3</p>
+    <div class="model3btn">
+      <a href="#"><button class="model3btn1">시승 신청하기</button></a>
+      <a href="#"><button class="model3btn2">주문하기</button></a>
     </div>
+  </div>
 
+  <!-- 모델Y -->
+  <div class="modely">
+    <img src="./images/Homepage-Model-Y-Global-Desktop.avif" class="modelyimg">
+    <p class="modelytext">Model Y</p>
+    <div class="modelybtn">
+      <a href="#"><button class="modelybtn1">시승 신청하기</button></a>
+      <a href="#"><button class="modelybtn2">주문하기</button></a>
+    </div>
+  </div>
+
+  <!-- 모델s -->
+  <div class="models">
+    <img src="./images/Model-S-homepage-desktop.avif" class="modelsimg">
+    <p class="modelstext">Model S</p>
+    <a href="#">인벤토리 둘러보기</a>
+    <div class="modelsbtn">
+      <a href="#"><button class="modelsbtn1">시승 신청하기</button></a>
+      <a href="#"><button class="modelsbtn2">주문하기</button></a>
+    </div>
+  </div>
 
 </body>
 </html>
