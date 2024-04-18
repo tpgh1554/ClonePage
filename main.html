@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mcdonalds.css">
+    <style>
+     
+      
+    </style>
+</head>
+<body>
+  <!-- 네비게이션바 -->
+    <header>
+        <button class="hamburger">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav>
+          <div class="logo">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Story</a></li>
+          </ul>
+          <div class="navdiv">
+            <button class="btn1">
+              <b>임차문의</b>
+            </button>
+            <button class="btn2">
+              <b>RECRUIT</b>
+            </button>
+            <button class="btn3">
+              <b>ENG</b>
+            </button>
+            <button class="btn4">
+              <img src="./images/ico_search.png" alt="">
+            </button>
+          </div>
+        </nav>
+      </header>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+        nav.classList.toggle('is-active');
+        });
+    </script>
+
+
+
+<!-- 메인 -->
+
+  <hr id="navline">
+    <div class="container">
+      <div id="videobar">
+        <video src="./images/0404_McD_BB_BigMac_30_1920x540.mp4" alt=""></video>
+      </div>
+      <h1>McDonald's LIVE</h1>
+      <div> 
+        <div>
+          <img src="./images/11.jpg" alt="">
+        </div> 
+        <div></div> 
+      </div>
+      <div> <div></div> <div></div> 
+      </div>
+      <div> <div></div> <div></div> 
+      </div>
+      <div> <div></div> <div></div> 
+      </div>
+      <div> <div></div> <div></div> 
+      </div>
+      <div> <div></div> <div></div> 
+      </div>
+    </div>
+
+
+</body>
+</html>
