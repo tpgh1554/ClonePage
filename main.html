@@ -7,111 +7,135 @@
   <link rel="stylesheet" href="./css/tesla.css">
 </head>
 <body>
-  <!-- 네비게이션바 -->
-  <header>
-    <nav>
-      <a href="#">
-        <img src="./images/TESLA LOGO-03.png" class="logo" >
-      </a>
-      <button class="hamburger">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <ul>
-        <li><a href="#">차량</a></li>
-        <li><a href="#">충전</a></li>
-        <li><a href="#">살펴보기</a></li>
-        <li><a href="#">Shop</a></li>
-      </ul>
-  </nav>
-  </header>
-  
-<!-- 메인비디오 -->
-  <div class="main-video">
-    <video src="./media/teslavideo.webm" autoplay loop>
+  <div class="container">
+    <div class="navigation">
+      <!-- 네비게이션바 -->
+      <nav>
+        <a href="#">
+          <img src="./images/TESLA LOGO-03 - 복사본.png" class="logo">
+        </a>
+          <ul class="ul1">
+            <li><a href="#">차량</a></li>
+            <li><a href="#">충전</a></li>
+            <li><a href="#">살펴보기</a></li>
+            <li><a href="#" class="shop">Shop</a></li>
+          </ul>
+          <ul class="ul2">
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path fill="#FFFFFF" d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path fill="#FFFFFF" d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                  <path fill="#FFFFFF" d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+    
+
+    <!-- 메인비디오 -->
+    <div class="main-video">
+      <video src="./media/teslavideo.webm" autoplay loop>
+        <p class="maintext2">지금 바로 시승 신청해 보세요</p>
+      </video>
+      <p class="maintext1">Tesla <span>경험하기</span></p>
       <p class="maintext2">지금 바로 시승 신청해 보세요</p>
-    </video>
-    <p class="maintext1">Tesla <span>경험하기</span></p>
-    <p class="maintext2">지금 바로 시승 신청해 보세요</p>
-    <a href="#"><button class="mainbtn">시승 신청하기</button></a>
-  </div>
-
-  <!-- 모델3 -->
-  <div class="model3">
-    <img src="./images/model3.jpg" class="model3img">
-    <p class="model3text">Model 3</p>
-    <div class="model3btn">
-      <a href="#"><button class="model3btn1">시승 신청하기</button></a>
-      <a href="#"><button class="model3btn2">주문하기</button></a>
+      <a href="#"><button class="mainbtn">시승 신청하기</button></a>
     </div>
-  </div>
 
-  <!-- 모델Y -->
-  <div class="modely">
-    <img src="./images/Homepage-Model-Y-Global-Desktop.avif" class="modelyimg">
-    <p class="modelytext">Model Y</p>
-    <div class="modelybtn">
-      <a href="#"><button class="modelybtn1">시승 신청하기</button></a>
-      <a href="#"><button class="modelybtn2">주문하기</button></a>
+    <!-- 모델3 -->
+    <div class="model3">
+      <img src="./images/model3.jpg" class="model3img">
+      <p class="model3text">Model 3</p>
+      <div class="model3btn">
+        <a href="#"><button class="model3btn1">시승 신청하기</button></a>
+        <a href="#"><button class="model3btn2">주문하기</button></a>
+      </div>
     </div>
-  </div>
 
-  <!-- 모델s -->
-  <div class="models">
-    <img src="./images/Model-S-homepage-desktop.avif" class="modelsimg">
-    <p class="modelstext">Model S</p>
-    <a href="#" class="modelstext2">인벤토리 둘러보기</a>
-    <div class="modelsbtn">
-      <a href="#"><button class="modelsbtn1">시승 신청하기</button></a>
-      <a href="#"><button class="modelsbtn2">주문하기</button></a>
+    <!-- 모델Y -->
+    <div class="modely">
+      <img src="./images/Homepage-Model-Y-Global-Desktop.avif" class="modelyimg">
+      <p class="modelytext">Model Y</p>
+      <div class="modelybtn">
+        <a href="#"><button class="modelybtn1">시승 신청하기</button></a>
+        <a href="#"><button class="modelybtn2">주문하기</button></a>
+      </div>
     </div>
-  </div>
 
-  <!-- 모델x -->
-  <div class="modelx">
-    <img src="./images/Homepage-Model-X-Desktop-LHD.avif" class="modelximg">
-    <p class="modelxtext">Model X</p>
-    <a href="#" class="modelxtext2">인벤토리 둘러보기</a>
-    <div class="modelxbtn">
-      <a href="#"><button class="modelxbtn1">시승 신청하기</button></a>
-      <a href="#"><button class="modelxbtn2">주문하기</button></a>
+    <!-- 모델s -->
+    <div class="models">
+      <img src="./images/Model-S-homepage-desktop.avif" class="modelsimg">
+      <p class="modelstext">Model S</p>
+      <a href="#" class="modelstext2">인벤토리 둘러보기</a>
+      <div class="modelsbtn">
+        <a href="#"><button class="modelsbtn1">시승 신청하기</button></a>
+        <a href="#"><button class="modelsbtn2">주문하기</button></a>
+      </div>
     </div>
-  </div>
 
-<!-- solarsystem -->
-<div class="solar">
-  <img src="./images/card5.jpg" class="solarimg">
-  <p class="solartext">태양광과 <b>Powerwall</b></p>
-  <p class="solartext2">모든 전력을 공급</p>
-  <div >
-    <a href="#"><button class="solarbtn">자세히 알아보기</button></a>
-  </div>
-</div>
-
-<!-- accesory -->
-<div class="acc">
-  <img src="./images/card6.jpg" class="accimg">
-  <p class="acctext">액세서리</p>
-  <div>
-    <a href="#"><button class="accbtn">지금 쇼핑하기</button></a>
-  </div>
-</div>
-<footer>
-  <div class="footer1">
-    <span>Tesla ⓒ 2024</span>
-    <span>개인정보 처리방침 및 법적 고지</span>
-    <span>이용약관</span>
-    <span>문의하기</span>
-    <span>새 소식</span>
-    <span>위치</span>
-    <div class="footptag">
-      <p>테슬라코리아 유한회사 | 사업자등록번호:524-88-00237 | 데이비드존파인스타인, 케네스어니스트무어 | 통신판매업신고: </p>
-      <p>제2016-서울강남-02964호 | <a href="#">사업자정보확인</a> | 호스팅제공자:Tesla inc. | 주소:서울특별시 강남구 테헤란로 134, 14층 | </p>
-      <p>대표전화:080-617-1388 | <a href="">southkorea@tesla.com</a></p>
+    <!-- 모델x -->
+    <div class="modelx">
+      <img src="./images/Homepage-Model-X-Desktop-LHD.avif" class="modelximg">
+      <p class="modelxtext">Model X</p>
+      <a href="#" class="modelxtext2">인벤토리 둘러보기</a>
+      <div class="modelxbtn">
+        <a href="#"><button class="modelxbtn1">시승 신청하기</button></a>
+        <a href="#"><button class="modelxbtn2">주문하기</button></a>
+      </div>
     </div>
+
+    <!-- solarsystem -->
+    <div class="solar">
+    <img src="./images/card5.jpg" class="solarimg">
+    <p class="solartext">태양광과 <b>Powerwall</b></p>
+    <p class="solartext2">모든 전력을 공급</p>
+    <div >
+      <a href="#"><button class="solarbtn">자세히 알아보기</button></a>
+    </div>
+    </div>
+
+    <!-- accesory -->
+    <div class="acc">
+    <img src="./images/card6.jpg" class="accimg">
+    <p class="acctext">액세서리</p>
+    <div>
+      <a href="#"><button class="accbtn">지금 쇼핑하기</button></a>
+    </div>
+    </div>
+    <footer>
+    <div class="footer1">
+      <span>Tesla ⓒ 2024</span>
+      <span>개인정보 처리방침 및 법적 고지</span>
+      <span>이용약관</span>
+      <span>문의하기</span>
+      <span>새 소식</span>
+      <span>위치</span>
+      <div class="footptag">
+        <p>테슬라코리아 유한회사 | 사업자등록번호:524-88-00237 | 데이비드존파인스타인, 케네스어니스트무어 | 통신판매업신고: </p>
+        <p>제2016-서울강남-02964호 | <a href="#">사업자정보확인</a> | 호스팅제공자:Tesla inc. | 주소:서울특별시 강남구 테헤란로 134, 14층 | </p>
+        <p>대표전화:080-617-1388 | <a href="">southkorea@tesla.com</a></p>
+      </div>
+    </div>
+    </footer>
+
   </div>
-</footer>
+
+  
 
 <script>
   const hamburger = document.querySelector('.hamburger');

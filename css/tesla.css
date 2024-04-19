@@ -1,50 +1,89 @@
 * {
-  margin: 0;
-}
-
-body {
-  width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
-
-header {
-  position: relative;
+body {
+  margin: 0 auto;
+  padding: 0;
+  
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  
+}
+.navigation {
+  position: absolute;
   width: 100%;
   display: flex;
-  z-index: 1;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
   border: 1px solid black;
 }
 
 nav {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
+  height: 40px;
+  padding: 4px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
-
 .logo {
-  z-index: 1;
   margin: 0;
-  height: 50px;
-  border: 1px solid black;
-}
-
-nav ul {
+  padding: 0;
   display: flex;
+  width: 110px;
+  /* border: 1px solid black; */
+}
+.ul1 {
+  
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
   list-style: none;
+  color: #fff;
 }
-
-nav li {
-  margin-right: 20px;
+.ul1 li{
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #fff;
 }
-
-nav a {
-  color: #000000;
+.ul1 a {
+  padding: 0;
+  margin: 0;
+  color: #fff;
   text-decoration: none;
 }
+
+
+
+.ul2 {
+  padding: 0;
+  display: flex;
+  align-content: flex-end;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+.ul2 a {
+  padding: 0;
+  margin: 0;
+}
+.ul2 svg {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+
+
 
 button {
   background-color: transparent;
@@ -52,7 +91,7 @@ button {
 }
 
 /* 768px 이하 화면 크기에서는 햄버거 메뉴 보이기 */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
         nav {
             display: inline;
             position: absolute;
@@ -128,7 +167,7 @@ button {
             transform: rotate(45deg);
             bottom: 0;
         }
-}
+} */
 
     /* 메인 */
     .main-video {
@@ -476,11 +515,20 @@ button {
       position: absolute;
       top: 19%;
       left: 50%;
+      /* justify-content: center; */
+      /* align-content: center; */
+      white-space: nowrap;
       transform: translate(-50%, -50%);
       text-align: center;
       color: black;
       font-size: 42px;
       z-index: 1;
+    }
+    @media (max-width: 768px) {
+      .solartext {
+        font-size: 40px
+        
+      }
     }
     .solartext2 {
       position: absolute;
