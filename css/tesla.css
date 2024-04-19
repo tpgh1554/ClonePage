@@ -129,7 +129,9 @@ button {
             bottom: 0;
         }
 }
-.main-video {
+
+    /* 메인 */
+    .main-video {
       margin-top: -50px;
       position: relative;
       z-index: -1;
@@ -145,40 +147,43 @@ button {
     }
     .maintext1 {
       position: absolute;
-      top: 20%;
+      top: 19%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
-      font-size: 32px;
+      font-size: 41px;
       z-index: 1;
-      font-weight: bold;
+      font-weight: 800;
       /* color: #fff; */
+    }
+    .maintext1 span {
+      font-weight: 400;
     }
     .maintext2 {
       position: absolute;
-      top: 23%;
+      top: 24%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
-      font-size: 12px;
+      font-size: 14px;
       z-index: 1;
     }
     .mainbtn {
       position: absolute;
-      top: 80%;
+      top: 83%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
-      border: 2px solid white;
+      border: 3px solid white;
       border-radius: 3px;
       /* padding: 5px; */
-      width: 200px;
-      height: 30px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
       z-index: 1;
-      font-size: 12px;
     }
     video {
       width: 100%;
@@ -186,9 +191,7 @@ button {
       object-fit: cover;
     }
 
-
-
-
+    /* 모델3 */
     .model3 {
       display: flex;
       position: relative;
@@ -202,15 +205,14 @@ button {
       object-fit: cover;
       overflow: hidden;
     }
-
     .model3text {
       position: absolute;
-      top: 20%;
+      top: 19%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: black;
-      font-size: 32px;
+      font-size: 42px;
       font-weight: bold;
       z-index: 1;
     }
@@ -224,40 +226,36 @@ button {
       margin: 0;
       padding: 0;
       border: 1px solid black;
-      
     }
     .model3btn1 {
-      
       transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
       border: 0;
       border-radius: 3px;
-      background-color: #383838;
+      background-color: #22251c;
       padding: 5px;
-      width: 200px;
-      height: 30px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
       z-index: 1;
-      font-size: 12px;
       margin: 0;
     }
     .model3btn2 {
-      
       transform: translate(-50%, -50%);
       text-align: center;
-      
       background-color: #dfdfdf;
       border: 0;
       border-radius: 3px;
       padding: 5px;
-      width: 200px;
-      height: 30px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
       z-index: 1;
-      font-size: 12px;
       margin: 0;
     }
 
-
+    /* 모델Y */
     .modely {
       display: flex;
       position: relative;
@@ -270,15 +268,14 @@ button {
       object-fit: cover;
       overflow: hidden;
     }
-
     .modelytext {
       position: absolute;
-      top: 20%;
+      top: 19%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: black;
-      font-size: 32px;
+      font-size: 42px;
       font-weight: bold;
       z-index: 1;
     }
@@ -297,24 +294,284 @@ button {
       color: #fff;
       border: 0;
       border-radius: 3px;
-      background-color: #383838;
+      background-color: #22251c;
       /* padding: 5px; */
-      width: 200px;
-      height: 30px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
       z-index: 1;
-      font-size: 12px;
     }
     .modelybtn2 {
       /* display: inline; */
       transform: translate(-50%, -50%);
       text-align: center;
-      
       background-color: #dfdfdf;
       border: 0;
       border-radius: 3px;
       padding: 5px;
-      width: 200px;
-      height: 30px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
       z-index: 1;
+    }
+
+    /* 모델S */
+    .models {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    .modelsimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .modelstext {
+      position: absolute;
+      top: 19%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 42px;
+      font-weight: bold;
+      z-index: 1;
+    }
+    .modelstext2 {
+      position: absolute;
+      text-decoration: underline;
+      top: 24%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 14px;
+      font-weight: 150;
+      z-index: 1;
+    }
+    .modelsbtn {
+      position: absolute;
+      top: 88%;
+      left: 50%;
+      display: flex;
+      gap: 10px;
+      border: 0;
+    }
+    .modelsbtn1 {
+      /* display: inline; */
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      border: 0;
+      border-radius: 3px;
+      background-color: #22251c;
+      /* padding: 5px; */
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
+      z-index: 1;
+    }
+    .modelsbtn2 {
+      /* display: inline; */
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: #dfdfdf;
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* 모델X */
+    .modelx {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    .modelximg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .modelxtext {
+      position: absolute;
+      top: 19%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 42px;
+      font-weight: bold;
+      z-index: 1;
+    }
+    .modelxtext2 {
+      position: absolute;
+      text-decoration: underline;
+      top: 24%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 14px;
+      font-weight: 150;
+      z-index: 1;
+    }
+    .modelxbtn {
+      position: absolute;
+      top: 88%;
+      left: 50%;
+      display: flex;
+      gap: 10px;
+      border: 0;
+    }
+    .modelxbtn1 {
+      /* display: inline; */
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      border: 0;
+      border-radius: 3px;
+      background-color: #22251c;
+      /* padding: 5px; */
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
+      z-index: 1;
+    }
+    .modelxbtn2 {
+      /* display: inline; */
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: #dfdfdf;
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+      width: 260px;
+      height: 40px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* 태양광 */
+    .solar {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    .solarimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .solartext {
+      position: absolute;
+      top: 19%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 42px;
+      z-index: 1;
+    }
+    .solartext2 {
+      position: absolute;
+      top: 24%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 14px;
+      z-index: 1;
+    }
+    .solarbtn {
+      position: absolute;
+      top: 79.3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: #22251c;
+      color: #fff;
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+      width: 260px;
+      height: 42px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* 액세서리 */
+    .acc {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    .accimg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    .acctext {
+      position: absolute;
+      top: 19%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: black;
+      font-size: 40px;
+      z-index: 1;
+    }
+    .accbtn {
+      position: absolute;
+      top: 83%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: #fff;
+      color: #22251c;
+      border: 0;
+      border-radius: 3px;
+      padding: 5px;
+      width: 260px;
+      height: 42px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* footer */
+    footer {
+      background-color: black;
+      color: white;
       font-size: 12px;
+      padding: 20px 0px 10px 0px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: lighter;
+    }
+    footer span {
+      margin-right: 10px;
+    }
+    .footptag {
+      margin-top: 30px;
+      font-size: 10px;
+    }
+    .footptag p {
+      margin: 6px;
+      font-weight: 300;
+    }
+    .footptag a {
+      text-decoration: none;
+      color: white;
+      text-decoration: underline;
     }

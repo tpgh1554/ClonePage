@@ -5,74 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/tesla.css">
-  
-  
-  <style>
-    .models {
-      display: flex;
-      position: relative;
-      width: 100%;
-      height: 100vh;
-    }
-    .modelsimg {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      overflow: hidden;
-    }
-
-    .modelstext {
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: black;
-      font-size: 32px;
-      font-weight: bold;
-      z-index: 1;
-    }
-    .modelsbtn {
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      display: flex;
-      gap: 10px;
-      border: 0;
-    }
-    .modelsbtn1 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #fff;
-      border: 0;
-      border-radius: 3px;
-      background-color: #383838;
-      /* padding: 5px; */
-      width: 200px;
-      height: 30px;
-      z-index: 1;
-      font-size: 12px;
-    }
-    .modelsbtn2 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
-      text-align: center;
-      
-      background-color: #dfdfdf;
-      border: 0;
-      border-radius: 3px;
-      padding: 5px;
-      width: 200px;
-      height: 30px;
-      z-index: 1;
-      font-size: 12px;
-    }
-  </style>
 </head>
 <body>
-
-
   <!-- 네비게이션바 -->
   <header>
     <nav>
@@ -92,22 +26,13 @@
       </ul>
   </nav>
   </header>
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-
-    hamburger.addEventListener('click', () => {
-    nav.classList.toggle('is-active');
-    });
-</script>
   
 <!-- 메인비디오 -->
- 
   <div class="main-video">
     <video src="./media/teslavideo.webm" autoplay loop>
       <p class="maintext2">지금 바로 시승 신청해 보세요</p>
     </video>
-    <p class="maintext1">Tesla 경험하기</p>
+    <p class="maintext1">Tesla <span>경험하기</span></p>
     <p class="maintext2">지금 바로 시승 신청해 보세요</p>
     <a href="#"><button class="mainbtn">시승 신청하기</button></a>
   </div>
@@ -136,12 +61,66 @@
   <div class="models">
     <img src="./images/Model-S-homepage-desktop.avif" class="modelsimg">
     <p class="modelstext">Model S</p>
-    <a href="#">인벤토리 둘러보기</a>
+    <a href="#" class="modelstext2">인벤토리 둘러보기</a>
     <div class="modelsbtn">
       <a href="#"><button class="modelsbtn1">시승 신청하기</button></a>
       <a href="#"><button class="modelsbtn2">주문하기</button></a>
     </div>
   </div>
+
+  <!-- 모델x -->
+  <div class="modelx">
+    <img src="./images/Homepage-Model-X-Desktop-LHD.avif" class="modelximg">
+    <p class="modelxtext">Model X</p>
+    <a href="#" class="modelxtext2">인벤토리 둘러보기</a>
+    <div class="modelxbtn">
+      <a href="#"><button class="modelxbtn1">시승 신청하기</button></a>
+      <a href="#"><button class="modelxbtn2">주문하기</button></a>
+    </div>
+  </div>
+
+<!-- solarsystem -->
+<div class="solar">
+  <img src="./images/card5.jpg" class="solarimg">
+  <p class="solartext">태양광과 <b>Powerwall</b></p>
+  <p class="solartext2">모든 전력을 공급</p>
+  <div >
+    <a href="#"><button class="solarbtn">자세히 알아보기</button></a>
+  </div>
+</div>
+
+<!-- accesory -->
+<div class="acc">
+  <img src="./images/card6.jpg" class="accimg">
+  <p class="acctext">액세서리</p>
+  <div>
+    <a href="#"><button class="accbtn">지금 쇼핑하기</button></a>
+  </div>
+</div>
+<footer>
+  <div class="footer1">
+    <span>Tesla ⓒ 2024</span>
+    <span>개인정보 처리방침 및 법적 고지</span>
+    <span>이용약관</span>
+    <span>문의하기</span>
+    <span>새 소식</span>
+    <span>위치</span>
+    <div class="footptag">
+      <p>테슬라코리아 유한회사 | 사업자등록번호:524-88-00237 | 데이비드존파인스타인, 케네스어니스트무어 | 통신판매업신고: </p>
+      <p>제2016-서울강남-02964호 | <a href="#">사업자정보확인</a> | 호스팅제공자:Tesla inc. | 주소:서울특별시 강남구 테헤란로 134, 14층 | </p>
+      <p>대표전화:080-617-1388 | <a href="">southkorea@tesla.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('nav');
+
+  hamburger.addEventListener('click', () => {
+  nav.classList.toggle('is-active');
+  });
+</script>
 
 </body>
 </html>
