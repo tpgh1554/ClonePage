@@ -5,7 +5,12 @@
 body {
   margin: 0 auto;
   padding: 0;
-  
+}
+@media screen and (max-width: 767px) {
+  /* 화면 너비가 767px 이하인 경우에 적용될 스타일 */
+  body {
+    min-width: 768px;
+  }
 }
 .container {
   margin: 0 auto;
@@ -28,7 +33,6 @@ nav {
   height: 40px;
   padding: 4px;
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -52,7 +56,6 @@ nav {
 .ul1 li:hover .navigation{
   background-color: #fff;
 }
-
 .ul1 li{
   position: relative;
   font-size: 14px;
@@ -66,37 +69,11 @@ nav {
   color: #fff;
   text-decoration: none;
 }
-.submenu1 {
-  display: none; 
-  position: absolute;
-  top: 100%; /* 상위 메뉴 아래에 위치 */
-  left: 0;
-  background-color: #fff;
-  z-index: 1;
-  width: 100%;
-}
-.submenu1 li {
-  display: block;
-  z-index: 1;
-}
-.submenu1 li a {
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-}
-/* 마우스를 올리면 하위 메뉴 표시 */
-.ul1 li:hover .submenu1 {
-  display: block;
-  z-index: 1;
-}
-
-
 .ul2 {
   padding: 0;
   display: flex;
   align-content: flex-end;
   list-style: none;
-  /* border: 1px solid black; */
 }
 .ul2 a {
   padding: 0;
@@ -106,94 +83,13 @@ nav {
   padding: 10px;
   display: flex;
   list-style: none;
-  /* border: 1px solid black; */
 }
-
-
-
 button {
   background-color: transparent;
   border: 0;
 }
 
-/* 768px 이하 화면 크기에서는 햄버거 메뉴 보이기 */
-/* @media (max-width: 768px) {
-        nav {
-            display: inline;
-            position: absolute;
-            top: 70px;
-            left: 0;
-            width: 100%;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            
-             
-        }
-        nav.is-active {
-            display: flex;
-            flex-direction: column;
-        }
-        nav ul {
-            flex-direction: column;
-            margin: 0;
-        }
-        nav li {
-            margin-right: 0;
-            margin-bottom: 10px;
-        }
-        .hamburger {
-            display: block;
-            position: relative;
-            
-           
-            overflow: hidden;
-            cursor: pointer;
-            padding: 10px;
-            border: none;
-            background-color: transparent;
-        }
-        .hamburger-box {
-            width: 30px;
-            height: 24px;
-           
-            display: inline-block;
-            position: relative;
-        }
-        .hamburger-inner {
-            display: block;
-            top: 50%;
-            margin-top: -2px;
-        }
-        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-            width: 100%;
-            height: 2px;
-            background-color: #333;
-            position: absolute;
-            left: 0;
-            transition-duration: 0.15s;
-            transition-timing-function: ease;
-        }
-        .hamburger-inner::before {
-            content: "";
-            top: -8px;
-        }
-        .hamburger-inner::after {
-            content: "";
-            bottom: -8px;
-        }
-        .hamburger.is-active .hamburger-inner {
-            background-color: transparent;
-        }
-        .hamburger.is-active .hamburger-inner::before {
-            transform: rotate(-45deg);
-            top: 0;
-        }
-        .hamburger.is-active .hamburger-inner::after {
-            transform: rotate(45deg);
-            bottom: 0;
-        }
-} */
+
 
     /* 메인 */
     .main-video {
@@ -210,41 +106,58 @@ button {
       overflow: hidden;
       border: 0;
     }
+    .textbox1 {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+    }
     .maintext1 {
       position: absolute;
       top: 19%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       text-align: center;
       color: white;
       font-size: 41px;
-      z-index: 1;
       font-weight: 800;
-      /* color: #fff; */
+      white-space: nowrap;
+      z-index: 1;
     }
     .maintext1 span {
       font-weight: 400;
     }
+    .textbox2 {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+    }
     .maintext2 {
       position: absolute;
-      top: 24%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 27%;
       text-align: center;
       color: white;
       font-size: 14px;
+    }
+    .btnbox {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
       z-index: 1;
+      display: flex;
+      justify-content: center;
     }
     .mainbtn {
       position: absolute;
       top: 83%;
-      left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
       border: 3px solid white;
       border-radius: 3px;
-      /* padding: 5px; */
       width: 260px;
       height: 40px;
       font-size: 14px;
@@ -262,6 +175,8 @@ button {
       position: relative;
       width: 100%;
       height: 100vh;
+      margin: 0 auto;
+      padding: 0;
     }
     .model3img {
       position: absolute;
@@ -270,6 +185,7 @@ button {
       object-fit: cover;
       overflow: hidden;
     }
+    
     .model3text {
       position: absolute;
       top: 19%;
@@ -281,53 +197,55 @@ button {
       font-weight: bold;
       z-index: 1;
     }
-    .model3btn {
-      overflow: hidden;
-      width: 100%;
+    .box {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+      z-index: 1;
       display: flex;
-      align-items: center;
+      justify-content: center;
+    }
+    .model3btn {
+      position: absolute;
+      top: 80%;
+      gap: 10px;
+      display: flex;
       justify-content: center;
       z-index: 1;
       margin: 0;
-      padding: 0;
-      border: 1px solid black;
     }
     .model3btn1 {
-      transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
       border: 0;
       border-radius: 3px;
       background-color: #22251c;
-      padding: 5px;
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
       margin: 0;
     }
     .model3btn2 {
-      transform: translate(-50%, -50%);
       text-align: center;
       background-color: #dfdfdf;
       border: 0;
       border-radius: 3px;
-      padding: 5px;
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
       margin: 0;
     }
-
     /* 모델Y */
     .modely {
       display: flex;
       position: relative;
       width: 100%;
       height: 100vh;
+      margin: 0 auto;
+      padding: 0;
     }
     .modelyimg {
+      position: absolute;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -345,49 +263,52 @@ button {
       z-index: 1;
     }
     .modelybtn {
+      overflow: hidden;
+      height: 60px;
       position: absolute;
       top: 80%;
-      left: 50%;
-      display: flex;
       gap: 10px;
-      border: 0;
+      display: flex;
+      flex-grow: unset;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+      margin: 0;
     }
     .modelybtn1 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
       border: 0;
       border-radius: 3px;
       background-color: #22251c;
-      /* padding: 5px; */
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
+      margin: 0;
     }
     .modelybtn2 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
       text-align: center;
       background-color: #dfdfdf;
       border: 0;
       border-radius: 3px;
-      padding: 5px;
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
+      margin: 0;
     }
-
+    
     /* 모델S */
     .models {
       display: flex;
       position: relative;
       width: 100%;
       height: 100vh;
+      margin: 0 auto;
+      padding: 0;
     }
     .modelsimg {
+      position: absolute;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -406,60 +327,61 @@ button {
     }
     .modelstext2 {
       position: absolute;
-      text-decoration: underline;
       top: 24%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: black;
       font-size: 14px;
-      font-weight: 150;
       z-index: 1;
     }
+    
     .modelsbtn {
+      overflow: hidden;
+      height: 60px;
       position: absolute;
-      top: 88%;
-      left: 50%;
-      display: flex;
+      top: 80%;
       gap: 10px;
-      border: 0;
+      display: flex;
+      flex-grow: unset;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+      margin: 0;
     }
     .modelsbtn1 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
       border: 0;
       border-radius: 3px;
       background-color: #22251c;
-      /* padding: 5px; */
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
+      margin: 0;
     }
     .modelsbtn2 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
       text-align: center;
       background-color: #dfdfdf;
       border: 0;
       border-radius: 3px;
-      padding: 5px;
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
+      margin: 0;
     }
-
-    /* 모델X */
+    /* 모델x */
     .modelx {
       display: flex;
       position: relative;
       width: 100%;
       height: 100vh;
+      margin: 0 auto;
+      padding: 0;
     }
     .modelximg {
+      position: absolute;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -478,50 +400,48 @@ button {
     }
     .modelxtext2 {
       position: absolute;
-      text-decoration: underline;
       top: 24%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: black;
       font-size: 14px;
-      font-weight: 150;
       z-index: 1;
     }
     .modelxbtn {
+      overflow: hidden;
+      height: 60px;
       position: absolute;
-      top: 88%;
-      left: 50%;
-      display: flex;
+      top: 80%;
       gap: 10px;
-      border: 0;
+      display: flex;
+      flex-grow: unset;
+      align-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+      margin: 0;
     }
     .modelxbtn1 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
       text-align: center;
       color: #fff;
       border: 0;
       border-radius: 3px;
       background-color: #22251c;
-      /* padding: 5px; */
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
+      margin: 0;
     }
     .modelxbtn2 {
-      /* display: inline; */
-      transform: translate(-50%, -50%);
       text-align: center;
       background-color: #dfdfdf;
       border: 0;
       border-radius: 3px;
-      padding: 5px;
       width: 260px;
       height: 40px;
       font-size: 14px;
-      z-index: 1;
+      margin: 0;
     }
 
     /* 태양광 */
@@ -541,8 +461,6 @@ button {
       position: absolute;
       top: 19%;
       left: 50%;
-      /* justify-content: center; */
-      /* align-content: center; */
       white-space: nowrap;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -551,6 +469,7 @@ button {
       transition: font-size 0.3s ease;
       z-index: 1;
     }
+    
     @media (max-width: 768px) {
       .solartext {
         font-size: 40px

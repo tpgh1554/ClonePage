@@ -6,52 +6,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/tesla.css">
   <style>
-    .ul1 {
-  
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  align-content: center;
-  list-style: none;
-  color: #fff;
-}
-.ul1 li{
-  position: relative;
-  font-size: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
-  color: #fff;
-}
-.ul1 a {
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  text-decoration: none;
-}
-.submenu1 {
-  /* display: none;  */
-  position: absolute;
-  top: 100%; /* 상위 메뉴 아래에 위치 */
-  left: 0;
-  background-color: #fff;
-  z-index: 1;
-  width: 100%;
-}
-.submenu1 li {
-  display: block;
-  z-index: 1;
-}
-.submenu1 li a {
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-}
-/* 마우스를 올리면 하위 메뉴 표시 */
-.ul1 li:hover .submenu1 {
-  display: block;
-  z-index: 1;
-}
+    
+    
   </style>
 </head>
 <body>
@@ -63,21 +19,7 @@
           <img src="./images/TESLA LOGO-03 - 복사본.png" class="logo">
         </a>
           <ul class="ul1">
-            <li><a href="#">차량</a>
-              <ul class="submenu1">
-                <li><a href="#">Model S</a></li>
-                <li><a href="#">Model 3/a></li>
-                <li><a href="#">Model X</a></li>
-                <li><a href="#">Model Y</a></li>
-                <li><a href="#">Cybertruck</a></li>
-                <li><a href="#">인벤토리</a></li>
-                <li><a href="#">인증 중고차</a></li>
-                <li><a href="#">시승 신청</a></li>
-                <li><a href="#">보상 판매</a></li>
-                <li><a href="#">법인 차량</a></li>
-                <li><a href="#">Roadster</a></li>
-              </ul>
-            </li>
+            <li><a href="#">차량</a></li>
             <li><a href="#">충전</a></li>
             <li><a href="#">살펴보기</a></li>
             <li><a href="#" class="shop">Shop</a></li>
@@ -114,18 +56,28 @@
       <video src="./media/teslavideo.webm" autoplay loop>
         <p class="maintext2">지금 바로 시승 신청해 보세요</p>
       </video>
-      <p class="maintext1">Tesla <span>경험하기</span></p>
-      <p class="maintext2">지금 바로 시승 신청해 보세요</p>
-      <a href="#"><button class="mainbtn">시승 신청하기</button></a>
+      <div class="textbox">
+        <div class="textbox1">
+          <p class="maintext1">Tesla <span>경험하기</span></p>
+        </div>
+        <div class="textbox2">
+          <p class="maintext2">지금 바로 시승 신청해 보세요</p>
+        </div>
+      </div>
+      <div class="btnbox">
+        <a href="#"><button class="mainbtn">시승 신청하기</button></a>
+      </div>
     </div>
 
     <!-- 모델3 -->
     <div class="model3">
       <img src="./images/model3.jpg" class="model3img">
       <p class="model3text">Model 3</p>
-      <div class="model3btn">
-        <a href="#"><button class="model3btn1">시승 신청하기</button></a>
-        <a href="#"><button class="model3btn2">주문하기</button></a>
+      <div class="box">
+        <div class="model3btn">
+          <a href="#"><button class="model3btn1">시승 신청하기</button></a>
+          <a href="#"><button class="model3btn2">주문하기</button></a>
+        </div>
       </div>
     </div>
 
@@ -133,10 +85,13 @@
     <div class="modely">
       <img src="./images/Homepage-Model-Y-Global-Desktop.avif" class="modelyimg">
       <p class="modelytext">Model Y</p>
-      <div class="modelybtn">
-        <a href="#"><button class="modelybtn1">시승 신청하기</button></a>
-        <a href="#"><button class="modelybtn2">주문하기</button></a>
+      <div class="box">
+        <div class="modelybtn">
+          <a href="#"><button class="modelybtn1">시승 신청하기</button></a>
+          <a href="#"><button class="modelybtn2">주문하기</button></a>
+        </div>
       </div>
+      
     </div>
 
     <!-- 모델s -->
@@ -144,9 +99,11 @@
       <img src="./images/Model-S-homepage-desktop.avif" class="modelsimg">
       <p class="modelstext">Model S</p>
       <a href="#" class="modelstext2">인벤토리 둘러보기</a>
-      <div class="modelsbtn">
-        <a href="#"><button class="modelsbtn1">시승 신청하기</button></a>
-        <a href="#"><button class="modelsbtn2">주문하기</button></a>
+      <div class="box">
+        <div class="modelsbtn">
+          <a href="#"><button class="modelsbtn1">시승 신청하기</button></a>
+          <a href="#"><button class="modelsbtn2">주문하기</button></a>
+        </div>
       </div>
     </div>
 
@@ -155,9 +112,11 @@
       <img src="./images/Homepage-Model-X-Desktop-LHD.avif" class="modelximg">
       <p class="modelxtext">Model X</p>
       <a href="#" class="modelxtext2">인벤토리 둘러보기</a>
-      <div class="modelxbtn">
-        <a href="#"><button class="modelxbtn1">시승 신청하기</button></a>
-        <a href="#"><button class="modelxbtn2">주문하기</button></a>
+      <div class="box">
+        <div class="modelxbtn">
+          <a href="#"><button class="modelxbtn1">시승 신청하기</button></a>
+          <a href="#"><button class="modelxbtn2">주문하기</button></a>
+        </div>
       </div>
     </div>
 
@@ -194,19 +153,6 @@
       </div>
     </div>
     </footer>
-
   </div>
-
-  
-
-<script>
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector('nav');
-
-  hamburger.addEventListener('click', () => {
-  nav.classList.toggle('is-active');
-  });
-</script>
-
 </body>
 </html>
